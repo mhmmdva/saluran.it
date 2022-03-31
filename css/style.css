@@ -23,9 +23,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -42,29 +40,48 @@ table {
 	border-spacing: 0;
 }
 
+/* font family google fonts */
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Red Hat Mono', monospace;
+font-family: 'Roboto', sans-serif; */
+
+body {
+	line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
 :root {
-    --warnablue: #467AA4;
+    --warnaBlue: #467AA4;
+    --warnaOrange : #FF8521;
+    --warnaBlue50 : #467aa496;
     
 }
 /* Container untuk semuanya 23, maret 2022*/
 .container {
     width: 100%;
+    max-width: 1300px;
+    margin: 25px;
+    border: 2px solid black;
 }
 
 
 /* Bagian khusus header  */
 .header {
-    background-color: var(--warnablue);
+    background-color: var(--warnaBlue);
     display: flex;
     justify-content:flex-start;
     align-items: center;
 
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;    
+    
 }
 
-.header__content ul li{
+.header__content ul li, a{
     display: inline-block;
+    color: white;
+    text-decoration: none;
     
 }
 
@@ -74,7 +91,44 @@ table {
 
 .img__content{
     width: 100%;
-    max-width: 500px;
+    max-width: 630px;
+    height: auto;
+    /* width: 830px;
+    height: 330px; */
     display: flex;
     align-items: center;
+    border-radius: 22px;
+    margin-right: 5%;
+    
+}
+
+
+.main__top , h1 {
+    font-size: 8vw;
+    font-weight: 900;
+    color: var(--warnaOrange);
+    display: flex;
+    align-items: center;
+    
+}
+.lessons {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.lesson__content img{
+    border: 6px solid var(--warnaBlue50);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+.lesson__content p {
+    font-size: 16px;
+    font-weight: bold;
+
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
 }
