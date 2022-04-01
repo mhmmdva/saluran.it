@@ -46,7 +46,7 @@ font-family: 'Red Hat Mono', monospace;
 font-family: 'Roboto', sans-serif; */
 
 body {
-	line-height: 1;
+	line-height: 1.2;
     font-family: 'Poppins', sans-serif;
     
 }
@@ -60,8 +60,8 @@ body {
 /* Container untuk semuanya 23, maret 2022*/
 .container {
     width: 100%;
-    max-width: 1300px;
-    margin: 25px;
+    max-width: 1200px;
+    margin: auto;
     border: 2px solid black;
 }
 
@@ -86,36 +86,48 @@ body {
 }
 
 .logo {
-    margin: 0 20px;
+    margin: 0 20px 0 45px;
 }
 
 .img__content{
     width: 100%;
-    max-width: 630px;
-    height: auto;
+    max-width: 600px;
+    max-height: 440px;
     /* width: 830px;
     height: 330px; */
     display: flex;
     align-items: center;
     border-radius: 22px;
     margin-right: 5%;
-    
+    margin-top: 50px;
 }
 
 
 .main__top , h1 {
-    font-size: 8vw;
-    font-weight: 900;
+    font-size: 6vw;
+    font-weight: bolder;
     color: var(--warnaOrange);
     display: flex;
     align-items: center;
     
+}
+
+/* khusus bagian main mid */
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.spaceTitle {
+    margin-top: 100px;
 }
 .lessons {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
 }
+
+
 .lesson__content img{
     border: 6px solid var(--warnaBlue50);
     border-radius: 10px;
@@ -131,4 +143,105 @@ body {
     width: 100%;
     max-width: 200px;
     text-align: center;
+}
+.saluranProfile{
+    display: flex;
+    align-items: center;
+}
+.saluranProfile > img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 18px;
+    margin: 120px 40px 120px 120px;
+    
+}
+
+.quotesSaluran {
+    width: 50%;
+    font-size: 20px;
+}
+
+
+
+
+/* Bagian khusus footer */
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
 }
