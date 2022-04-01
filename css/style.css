@@ -62,7 +62,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    border: 2px solid black;
+    
 }
 
 
@@ -75,16 +75,21 @@ body {
 
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;    
-    
+    box-shadow: 0px 10px 14px 0px rgb(187, 187, 187);
 }
 
 .header__content ul li, a{
     display: inline-block;
     color: white;
     text-decoration: none;
-    
+    padding: 0 6px;
 }
 
+.header__content a:hover {
+    
+    border-bottom: 2px solid var(--warnaOrange);
+    bottom: 4px;
+}
 .logo {
     margin: 0 20px 0 45px;
 }
@@ -93,13 +98,13 @@ body {
     width: 100%;
     max-width: 600px;
     max-height: 440px;
-    /* width: 830px;
-    height: 330px; */
+    
     display: flex;
     align-items: center;
     border-radius: 22px;
     margin-right: 5%;
     margin-top: 50px;
+    box-shadow: 0px 10px 14px 0px rgb(187, 187, 187);
 }
 
 
@@ -125,6 +130,7 @@ body {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    
 }
 
 
@@ -134,6 +140,7 @@ body {
     width: 100%;
     height: auto;
     max-width: 200px;
+    box-shadow: 0px 5px 20px 0px rgb(187, 187, 187);
 }
 
 .lesson__content p {
@@ -153,13 +160,15 @@ body {
     max-width: 300px;
     border-radius: 18px;
     margin: 120px 40px 120px 120px;
-    
+    box-shadow: 0px 10px 14px 0px rgb(187, 187, 187);   
 }
 
 .quotesSaluran {
     width: 50%;
-    font-size: 20px;
+    font-size: 20px;    
+    text-shadow: 7px 10px 10px rgb(0, 0, 0);
 }
+
 
 
 
@@ -174,12 +183,22 @@ ul{
 	list-style: none;
 }
 .footer{
-	background-color: #24262b;
-    padding: 70px 0;
+	background-color: var(--warnaBlue);
+    padding: 30px 0;
+}
+.footer__logo > img{
+    max-width: 200px;
+    width: auto;
+    margin-right: 50px;
+    float: left;
 }
 .footer-col{
-   width: 25%;
+   width: 20%;
    padding: 0 15px;
+}
+.footer_payment {
+    margin-top: 20px;
+    width: 100%;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -194,10 +213,10 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: var(--warnaOrange);
 	height: 2px;
 	box-sizing: border-box;
-	width: 50px;
+	width: 100%;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -232,7 +251,15 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
-
+.bank > img {
+    border-radius: 100px;
+    width: 50px;
+}
+.copyright {
+    width: 100%;
+    text-align: right;
+    color: #ffffff;
+}
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
