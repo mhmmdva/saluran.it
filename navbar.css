@@ -1,0 +1,96 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+/* font family google fonts */
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Red Hat Mono', monospace;
+font-family: 'Roboto', sans-serif; */
+
+body {
+	line-height: 1.2;    
+}
+:root {
+    --warnaBlue: #467AA4;
+    --warnaOrange : #FF8521;
+    --warnaBlue50 : #467aa496;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin: auto;
+    border: 1px solid black;
+}
+
+nav {
+    background-color: var(--warnaBlue);
+    height: 80px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.navbar{
+    overflow: hidden;
+}
+.navCategory  {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.dropdown {
+    overflow: hidden;
+}
+.submenu {
+    display: none;
+}
+
+.submenu a {
+    display: block;
+}
+
+.submenu a:hover .submenu{
+    display: block;
+}
