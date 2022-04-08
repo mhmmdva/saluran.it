@@ -62,35 +62,83 @@ body {
     max-width: 1280px;
     height: auto;
     margin: auto;
-    border: 1px solid black;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 nav {
     background-color: var(--warnaBlue);
-    height: 80px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    
 }
 .navbar{
-    overflow: hidden;
-}
-.navCategory  {
-    
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
-.dropdown {
-    overflow: hidden;
+/* mengatur jarak dari navbar */
+.navCategory  a{
+    color: black;
+    text-decoration: none;   
+    padding: 0 20px; 
 }
+
+.navCategory a:hover{
+    border-bottom: 2px solid white;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
 .submenu {
     display: none;
+    position:absolute;
+    background-color:#f0f0f0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.705);
+    padding: 0;
+    z-index: 1;
+    border-radius: 8px;   
 }
 
-.submenu a {
+/* mengatur jarak atas bawah pada navbar */
+#navBtn{
+    margin: 22px 0;
+    padding: 0 12px;
+    border: none;
+    background-color: var(--warnaBlue);
+}
+.borderNav:hover{
+    border-bottom: 3px solid var(--warnaOrange);
+}
+/* mengatur lebar dari dropdown */
+.submenu > a{ 
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 240px;
+    padding: 20px 0;
+}
+.dropdown:hover .submenu{
     display: block;
 }
 
-.submenu a:hover .submenu{
-    display: block;
+.submenu a:hover{
+    border: none;
+    background-color: #467AA4;
+}
+
+.submenu > .borderTop:hover{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.submenu > .borderBot:hover{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }

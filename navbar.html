@@ -11,21 +11,39 @@
 <body>
       <nav>
           <div class="container">
-            <div class="navbar">
-                    <div class="navCategory">             
-                        <img class="navImg" src="./img/logosaluranit.png"  alt="">
-                        <a href="#">Home</a>
-                        <div class="dropdown dropbtn">
-                            <a href="">Courses</a>
+            <div class="navbar"> <!-- navbar -->
+                <img class="navImg" src="./img/logosaluranit.png"  alt="">
+                    <div class="navCategory">                                     
+                        <button id="navBtn" type="button" href="#">Home</button>                        
+                
+                        <div id="dropdown" class="dropdown dropbtn">
+                            <button type="button" id="navBtn"><span class="borderNav">Courses</span></button>    
                             <div class="submenu">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
+                                <a class="borderTop" href="#">Web Design Pemprograman</a>
+                                <ul>
+                                    <li><a href=""> HTML 5</a></li>
+                                    <li><a href=""> CSS 3</a></li>
+                                    <li><a href=""> Javascript</a></li>
+                                    <li><a href=""> PHP</a></li>
+                                </ul>
+                                <a class="borderBot" href="#">Pemprograman</a>            
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </div> <!-- dropdown dropbtn -->
+
+                        <div id="dropdown" class="dropdown dropbtn">
+                            <button id="navBtn" type="button" href="#"><span class="borderNav">About</span></button>    
+                            <div class="submenu">
+                                <a class="borderTop" href="#">Link 4</a>
+                                <a href="#">Link 5</a>
+                                <a class="borderBot" href="#">Link 6</a>
+                            </div>
+                        </div> <!-- dropdown dropbtn -->                    
+
+                    </div> <!-- navCategory-->
+                </div> <!-- navbar -->
+            </div> <!-- container -->
       </nav>
+
+        
 </body>
 </html>
